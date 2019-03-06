@@ -15,7 +15,7 @@ function cipher(S, shift, action) {
         if (list.indexOf(sArray[index]) > -1) {
           let position = list.indexOf(sArray[index]);
           let letterindex = position + shift;
-          if (letterindex > 26) {
+          if (letterindex > 25) {
             //to handle large shifts
             letterindex = letterindex%26;
             strArray.push(list[letterindex]);
@@ -28,7 +28,7 @@ function cipher(S, shift, action) {
         else if (listUpper.indexOf(sArray[index]) > -1) {
           let position = listUpper.indexOf(sArray[index]);
           let letterindex = position + shift;
-          if (letterindex > 26) {
+          if (letterindex > 25) {
             //to handle large shifts
             letterindex = letterindex%26;
             strArray.push(listUpper[letterindex]);
